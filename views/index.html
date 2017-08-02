@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spreadsheet JSON</title>
+    <meta name="description" content="Get Google Spreadsheets as JSON">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900|Source+Code+Pro:400" rel="stylesheet" type="text/css">
+    <link id="favicon" rel="icon" href="https://cdn.glitch.com/2a43a85e-d9bc-4974-8e3a-7f225d942bf4%2Ffavicon.png?1490125448941" type="image/png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header class="container">
+      <h1>
+        Get your spreadsheet as JSON
+      </h1>
+    </header>
+
+    <main class="container">
+      <p>Paste your google spreadsheet key below and get back a copy in JSON format:</p>
+      <form>
+        <input class="pastekeyhere" name="key" type="text" autocorrect="off" maxlength="100" placeholder="Paste your spreadsheet key">
+        <button class="submit-btn" type="submit">Submit</button>
+      </form>
+      <p>
+        You can also use this URL to get your data: <br><code>https://spreadsheet.glitch.me/?key=YOURSPREADSHEETKEY</code>
+      </p>
+      <hr>
+      <h2>
+        How to get your spreadsheet key
+      </h2>
+      <p>
+        In Google Sheets (Spreadsheets) create a new spreadsheet. Click <b>File</b> then <b>Publish to the Web</b>. 
+        In the new window that opens, click <b>Publish</b> for the entire document. Now your spreadsheet will be reachable (not editable) 
+        and a URL is provided. In that URL there is a set of uppercase letters and numbers between two forward slashes. 
+        That is your spreadsheet key. Copy it to use here!
+      </p>
+      <h3>
+        Example
+      </h3>
+      <p>
+        In this spreadsheet url: <br><code>https://docs.google.com/spreadsheets/d/<b>10vr-bMOH_16Jk6yPyqB7WJTLF3EfKhXh1njP46M9AAc</b>/pubhtml</code>, the 
+        spreadsheet key is: <code>10vr-bMOH_16Jk6yPyqB7WJTLF3EfKhXh1njP46M9AAc</code>.      
+      </p>
+    </main>
+
+    <footer>
+      <a href="https://glitch.com">
+        Remix this in Glitch
+      </a>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+        integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+        crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
